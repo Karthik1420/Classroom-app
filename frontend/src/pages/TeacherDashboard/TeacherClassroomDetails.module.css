@@ -1,0 +1,83 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.hero {
+  background-color: var(--primary);
+  color: white;
+  padding: 3rem 0;
+}
+.heroTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.heroSubtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+.mainContent {
+  margin-top: 2rem;
+}
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+.tabBtn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-bottom: 3px solid transparent;
+}
+.tabBtn:hover {
+  color: var(--primary);
+  background: rgba(25, 103, 210, 0.05);
+}
+.activeTab {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+.notesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.emptyState {
+  padding: 3rem;
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+}
+.studentList {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.studentItem {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.studentItem:last-child {
+  border-bottom: none;
+}
+.studentAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
