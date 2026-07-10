@@ -25,7 +25,7 @@ def get_application() -> FastAPI:
     # Allows frontend applications to communicate with this backend
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"], # In production, replace with specific origins
+        allow_origins=["https://classroomproject1.netlify.app", "http://localhost:5173"], # Production and Local dev origins
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
